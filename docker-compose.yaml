@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  web:
+    image: kaenova/ci-cd-playground:latest
+    ports:
+      - "2001:2000"
+    deploy:
+      replicas: 2
