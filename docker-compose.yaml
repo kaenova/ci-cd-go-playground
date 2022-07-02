@@ -16,5 +16,3 @@ services:
 networks:
   web-net:
     driver: overlay
-    name: web-overlay-net
-    
