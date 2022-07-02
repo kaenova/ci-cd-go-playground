@@ -8,7 +8,12 @@ import (
 )
 
 func hello(w http.ResponseWriter, req *http.Request) {
-	w.Write([]byte("hello from version xx"))
+	hostname, err := os.Hostname()
+	if err != nil {
+		w.Write([]byte("cannot get hostname\n"))
+		return
+	}
+	w.Write([]byte("hello from version x.x.x of " + hostname + "\n"))
 	return
 }
 

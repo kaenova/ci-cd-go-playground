@@ -5,5 +5,12 @@ services:
     image: kaenova/ci-cd-playground:latest
     ports:
       - "2001:2000"
+    networks:
+      - web-net
     deploy:
       replicas: 2
+
+networks:
+  web-net:
+    driver: overlay
+    name: web-overlay-net
