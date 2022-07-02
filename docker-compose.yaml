@@ -7,7 +7,7 @@ services:
   web:
     image: kaenova/ci-cd-playground:latest
     ports:
-      - "2001:2000"
+      - "2010:2000"
     networks:
       - web-net
     deploy:
