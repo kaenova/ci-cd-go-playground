@@ -11,7 +11,7 @@ services:
     networks:
       - web-net
     deploy:
-      replicas: 2
+      replicas: 4
 
 networks:
   web-net:
