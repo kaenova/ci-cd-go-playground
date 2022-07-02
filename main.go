@@ -13,7 +13,7 @@ func hello(w http.ResponseWriter, req *http.Request) {
 		w.Write([]byte("cannot get hostname\n"))
 		return
 	}
-	w.Write([]byte("hello from version x.x.6 of docker container " + hostname + "\n"))
+	w.Write([]byte("hello from version x.x.7 of docker container " + hostname + "\n"))
 	return
 }
 
